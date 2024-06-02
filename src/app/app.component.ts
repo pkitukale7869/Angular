@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component} from '@angular/core';
+import { TodosComponent } from './MyComponents/todos/todos.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+selector: 'app-root',
+standalone:true,
+imports: [TodosComponent],
+templateUrl: './app.component.html',
+styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'NiceProject_1';
+
+export class AppComponent{
+  title='External Template in Anular 17';
+  constructor(){
+  }
 }
